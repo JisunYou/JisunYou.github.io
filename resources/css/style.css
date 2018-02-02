@@ -3,7 +3,6 @@
 }*/
 
 html, body {
-	/*font-family: 'Open Sans', sans-serif;*/
   font-family: 'Source Serif Pro', serif;
 	font-size: 16px;
 }
@@ -92,24 +91,15 @@ ul li i {
   padding: 100px 15px;
   text-align: center;
 }
-/*hr {
-  border: 0;
-  border-top: 3px double black;
-}*/
-hr {
-  border: 0;
-  height: 1px;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
-}
 
-
-.container h3.backline {
+/*line*/
+.backline {
   position: relative;
   z-index: 1;
   text-align:center;
   margin-bottom: 50px;
 }
-.container h3::before {
+.backline::before {
   border-top: 2px solid black;
   content:"";
   margin: 0 auto;
@@ -117,13 +107,14 @@ hr {
   top: 50%; left: 0; right: 0; bottom: 0;
   z-index: -1;
 }
-.container h3 span {
+.backline span {
   background: WhiteSmoke; 
   padding: 0 30px; 
 }
 
 /*section: skills*/
 #skills {  
+  width: 100%;
   background-color: WhiteSmoke;
 }
 #skills h3 {
@@ -136,6 +127,7 @@ hr {
   margin-bottom: 50px;
 }
 .service {
+  width: 200px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -156,6 +148,9 @@ hr {
   margin: 35px 0;
 }
 #skills .skills {
+  margin-bottom: 1rem;
+}
+#skills .skills p {
   font-size: 1.3rem;
 }
 
@@ -188,9 +183,7 @@ hr {
   box-shadow: 2px 2px 2px 0px rgba(222,222,222,1);
 
 }
-#udemy {
 
-}
 .title {
   text-align: left;
   margin: 30px 0;
@@ -205,6 +198,7 @@ hr {
   justify-content: center;
 }
 .skills p{
+  font-size: 1rem;
   padding: 5px;
   border: 1px solid grey;
   border-radius: 3px;
@@ -221,6 +215,7 @@ hr {
 
 /*contact*/
 #contact {
+  width: 100%;
   background-color: WhiteSmoke;
 }
 #contact h3 span {
@@ -236,7 +231,10 @@ hr {
   font-size: 1rem;
   font-weight: 700;
 }
-
+#contact .container {
+  padding: 100px 15px 30px 15px;
+  text-align: center;
+}
 
 .footer {
     border-top: 1px solid #ededed;
@@ -246,4 +244,31 @@ hr {
     color: black;
     font-weight: 300;
     text-align: center;
+}
+
+button {
+  font-family: 'Source Serif Pro', serif;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  border: 1px solid transparent;
+  padding: .375rem .75rem;color: #343a40;
+  background-color: transparent;
+  background-image: none;
+  border-color: #343a40;
+  line-height: 1.5;
+  border-radius: .25rem;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+button:hover {
+  color: #fff;
+  background-color: #343a40;
+  border-color: #343a40;
+}
+
+button:focus {
+  outline: none;
 }
