@@ -159,6 +159,9 @@ ul li i {
   background: white;
 }
 /*carousel*/
+#projects a {
+  cursor: cell;
+}
 #projects img {
   width: 100%;
 }
@@ -191,7 +194,10 @@ ul li i {
 }
 .projectName {
   font-size: 1.3rem;
-  margin: 15px 0;
+  margin-bottom: 15px;
+}
+.projectDes {
+  margin-top: 15px;
 }
 .skills {
   display: flex;
