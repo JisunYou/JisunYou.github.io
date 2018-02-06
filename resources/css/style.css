@@ -232,11 +232,6 @@ ul li i {
   text-shadow: 1px 1px 0px rgba(256, 256, 256, 1);
   
 }
-.mail-btn {
-  margin-top: 15px;
-  font-size: 1rem;
-  font-weight: 700;
-}
 #contact .container {
   padding: 100px 15px 30px 15px;
   text-align: center;
@@ -254,14 +249,19 @@ ul li i {
 
 button {
   font-family: 'Source Serif Pro', serif;
+  margin-top: 20px;
+  font-size: 1.2rem;
+  color: white;
+  font-weight: 700;
   cursor: pointer;
   display: inline-block;
   text-align: center;
   white-space: nowrap;
   vertical-align: middle;
   border: 1px solid transparent;
-  padding: .375rem .75rem;color: #343a40;
-  background-color: transparent;
+  padding: .375rem .75rem;
+  color: white;
+  background-color: #343a40;
   background-image: none;
   border-color: #343a40;
   line-height: 1.5;
@@ -270,8 +270,8 @@ button {
 }
 
 button:hover {
-  color: #fff;
-  background-color: #343a40;
+  color: #343a40;
+  background-color: transparent;
   border-color: #343a40;
 }
 
