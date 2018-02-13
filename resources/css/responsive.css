@@ -50,6 +50,21 @@
 	}
 }
 @media (max-width: 500px) {
+	#main {
+		background-position: bottom center;
+		background-size: contain;
+	}
+	.name h1 {
+		font-size: 5rem;
+		font-weight: 700;
+
+		/*background: -webkit-linear-gradient(#eee, #333);*/
+		/*-webkit-background-clip: text;*/
+		/*-webkit-text-fill-color: transparent;*/
+	}
+	.role h3 {
+		font-size: 2.7rem;
+	}
 	.skillsList {
 		flex-direction: column;
 		justify-content: space-around;
